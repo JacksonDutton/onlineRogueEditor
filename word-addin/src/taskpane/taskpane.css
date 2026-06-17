@@ -1,0 +1,87 @@
+body {
+  font-family: -apple-system, "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 12px;
+  font-size: 13px;
+}
+
+.hidden {
+  display: none;
+}
+
+h1 {
+  font-size: 16px;
+  margin: 0 0 12px;
+}
+
+h2 {
+  font-size: 13px;
+  margin: 16px 0 6px;
+  color: #333;
+}
+
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 13px;
+  resize: vertical;
+}
+
+.button-row {
+  display: flex;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+button {
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+select {
+  margin: 0 8px;
+}
+
+.results-list {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0;
+}
+
+.results-list li {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 8px;
+  margin-bottom: 6px;
+}
+
+.results-list .original {
+  text-decoration: line-through;
+  color: #a33;
+}
+
+.results-list .suggestion {
+  color: #1a7f1a;
+  font-weight: 600;
+}
+
+.results-list .explanation {
+  display: block;
+  color: #666;
+  margin-top: 4px;
+}
+
+.result-box {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 8px;
+  margin-top: 8px;
+  min-height: 20px;
+  white-space: pre-wrap;
+}
+
+#status {
+  color: #666;
+  font-style: italic;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <title>Editing Assistant</title>
+  <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+  <link rel="stylesheet" href="taskpane.css" />
+</head>
+<body>
+  <main id="app" class="hidden">
+    <h1>Editing Assistant</h1>
+
+    <section>
+      <h2>Text</h2>
+      <textarea id="text-box" rows="10" placeholder="Paste text here, or click 'Get selection' to pull the current selection from the document."></textarea>
+      <div class="button-row">
+        <button id="btn-get-selection">Get selection</button>
+        <button id="btn-insert">Insert into document</button>
+      </div>
+    </section>
+
+    <section>
+      <h2>Grammar &amp; style</h2>
+      <button id="btn-check-grammar">Check grammar/style</button>
+      <ul id="grammar-results" class="results-list"></ul>
+    </section>
+
+    <section>
+      <h2>Citation formatter</h2>
+      <label for="citation-style">Style</label>
+      <select id="citation-style">
+        <option value="APA">APA</option>
+        <option value="MLA">MLA</option>
+        <option value="Chicago">Chicago</option>
+      </select>
+      <button id="btn-format-citation">Format citation</button>
+      <div id="citation-result" class="result-box"></div>
+    </section>
+
+    <p id="status"></p>
+  </main>
+
+  <script src="taskpane.js"></script>
+</body>
+</html>
